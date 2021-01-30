@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
+
+* {
+  display: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* background-color: rgb(250, 229, 201); */
+  font-family: "Yusei Magic", sans-serif;
+}
+
+.Nav {
+  margin: 5px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: right;
+  background-color: rgba(232, 212, 101, 0.6);
+  border-bottom: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 0rem 0 1rem rgb(82, 71, 44);
+  padding: 0 15px;
+}
+
+.Nav-element {
+  margin: 1rem;
+  background: transparent;
+}
+
+.container {
+  max-width: 976px;
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Intro {
+  display: grid;
+  grid-template-areas:
+    "name name info info info info"
+    "name name info info info info"
+    "name name info info info info";
+  margin: 5px;
+  background-image: url("static/photo_2021-01-29_13-32-15.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0rem 0 1rem rgb(82, 71, 44);
+
+  height: 700px;
+}
+
+.Company-name {
+  grid-area: name;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 25px;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.Company-name h4 {
+  color: navy;
+  margin: 5px;
+
+  background-color: rgba(211, 191, 74, 0.816);
+  box-shadow: 0rem 0 1rem rgb(82, 71, 44);
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.Info {
+  grid-area: info;
+  text-align: center;
+
+  /* padding-top: 6rem; */
+}
+.Info p {
+  position: relative;
+  background-color: rgba(175, 151, 129, 0.9);
+  border-radius: 15px;
+  padding: 10px;
+  top: 330px;
+  box-shadow: 0rem 0 1rem rgb(82, 71, 44);
+}
+.Info p span {
+  color: rgb(148, 35, 35);
+}
+
+.More-info {
+  margin: 5px;
+  background-color: rgba(211, 190, 74, 0.57);
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0rem 0 1rem rgb(82, 71, 44);
+}
+
+.More-info ul {
+  list-style: none;
+}
+
+.More-info p {
+  color: blueviolet;
+}
+
+.Contacts-top {
+  margin: 5px;
+  background-color: rgba(240, 155, 91, 0.611);
+  border-radius: 15px;
+  box-shadow: 0rem 0 1rem rgb(82, 71, 44);
+}
+
+.Contacts-bottom {
+  margin: 2rem;
+}
+
+.Products {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  background-color: rgba(223, 221, 220, 0.8);
+  border-radius: 15px;
+  padding: 10px;
+  margin: 5px;
+  box-shadow: 0rem 0 1rem rgb(82, 71, 44);
+}
+
+/* responsive galery */
+
+.gallery {
+  border: 1px solid #ccc;
+  border-radius: 7px;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  border-radius: 6px 6px 0 0;
+  width: 100%;
+  height: auto;
+}
+
+.gallery a {
+  text-decoration: none;
+}
+.desc {
+  padding: 10px;
+  text-align: center;
+  background: bisque;
+  border-radius: 0 0 6px 6px;
+}
+
+.responsive {
+  /* background: transparent; */
+  border-radius: 7px;
+  padding: 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media (max-width: 810px) {
+  .Intro {
+    height: 800px;
+  }
+@media (max-width: 710px) {
+  .Intro {
+    display: grid;
+    padding-top: 0rem;
+    grid-template-areas:
+      "name name name name name name"
+      "name name name name name name"
+      "info info info info info info"
+      "info info info info info info";
+    height: 800px;
+  }
+  .Info p {
+    position: relative;
+    top: 0px;
+  }
+
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+  .Intro {
+    height: 900px;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
